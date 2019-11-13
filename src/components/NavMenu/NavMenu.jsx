@@ -10,7 +10,7 @@ class NavMenu extends Component {
     return (
       <nav className={navVisibility}>
         <Link to="/">Story Beats</Link>
-        <Link to="/monster-manual">Monster Manual</Link>
+        <Link to="monster-manual">Monster Manual</Link>
         <Link to="/spellbook">Spellbook</Link>
       </nav>
     );
