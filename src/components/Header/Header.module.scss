@@ -1,0 +1,24 @@
+.navHeader {
+  // box-sizing: border-box;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1vh 2vh;
+  color: white;
+  font-size: 8vh;
+
+  .bars,
+  .dnd {
+    cursor: pointer;
+  }
+
+  .bars:active,
+  .dnd:active {
+    color: darkgray;
+  }
+}
