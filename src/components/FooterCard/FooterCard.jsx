@@ -5,10 +5,7 @@ class FooterCard extends Component {
   state = {};
   render() {
     return (
-      <div
-        className={styles.footerCard}
-        onClick={() => this.props.filterAction(this.props.group)}
-      >
+      <div className={styles.footerCard} onClick={() => this.props.filterAction(this.props.group)}>
         <section>
           <h3>Group - {this.props.group}</h3>
         </section>
