@@ -1,4 +1,4 @@
-# gm-screen-plus-react
+# GM-screen-plus-react
 
 An app to aid GM's in most aspects of game running, including a story beat tracker, combat tracker, useful information and any necessary extra notes. For use with 5th edition D'n'D. This tool aims to reduce the amount of the game that is spent looking things up to allow the game to have a better flow to it.
 
@@ -28,3 +28,7 @@ There will also be an ability to plan the encounters out ahead of time. This wil
 ## Combat tracker
 
 This will allow the GM to track turn order, hit points of combatents and have an optional option for a turn timer/counter. Monsters will be searchable and will come with a stat block to reduce having to look things up during game. There will be an option for a GM to add new creatures to the tool or customise stat blocks for monsters and save them seperately from there originals.
+
+## Monster list
+
+This will be a repository of all monsters in the monster manual, in the styles that you're used to in the manual
