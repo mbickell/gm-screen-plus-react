@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase";
-import styles from "./App.module.scss";
+// import styles from "./App.module.scss";
 import Header from "../../components/Header/Header";
 import NavMenu from "../../components/NavMenu/NavMenu";
 import StoryCards from "../StoryCards/StoryCards";
