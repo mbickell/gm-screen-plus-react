@@ -10,11 +10,7 @@ class Header extends Component {
   render() {
     return (
       <header className={styles.navHeader}>
-        <FontAwesomeIcon
-          icon={faBars}
-          className={styles.bars}
-          onClick={this.props.navOpening}
-        />
+        <FontAwesomeIcon icon={faBars} className={styles.bars} onClick={this.props.navOpening} />
         <FontAwesomeIcon icon={faDAndD} className={styles.dnd} />
       </header>
     );

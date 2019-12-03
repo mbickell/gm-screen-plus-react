@@ -1,0 +1,15 @@
+.stats {
+  ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid red;
+    padding: 10px 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}

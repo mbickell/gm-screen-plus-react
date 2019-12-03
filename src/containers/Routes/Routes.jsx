@@ -8,8 +8,8 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <StoryCards path="/" />
-        <MonsterCards path="monster" />
+        <StoryCards path="/" storyData={this.props.storyData} />
+        <MonsterCards path="monster-manual" />
       </Router>
     );
   }

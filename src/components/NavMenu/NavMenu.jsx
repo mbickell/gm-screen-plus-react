@@ -9,9 +9,15 @@ class NavMenu extends Component {
 
     return (
       <nav className={navVisibility}>
-        <Link to="/">Story Beats</Link>
-        <Link to="monster-manual">Monster Manual</Link>
-        <Link to="/spellbook">Spellbook</Link>
+        <Link to="/" onClick={this.props.navOpening}>
+          Story Beats
+        </Link>
+        <Link to="monster-manual" onClick={this.props.navOpening}>
+          Monster Manual
+        </Link>
+        <Link to="/spellbook" onClick={this.props.navOpening}>
+          Spellbook
+        </Link>
       </nav>
     );
   }

@@ -6,6 +6,8 @@ import NavMenu from "../../components/NavMenu/NavMenu";
 import StoryCards from "../StoryCards/StoryCards";
 import Footer from "../Footer/Footer";
 import MonsterCards from "../MonsterCards/MonsterCards";
+import Routes from "../Routes/Routes";
+import { Router } from "@reach/router";
 
 class App extends Component {
   state = {
@@ -53,16 +55,11 @@ class App extends Component {
     return (
       <>
         <Header navOpening={this.updateState} />
-        <NavMenu isOpen={this.state.navOpen} />
+        <NavMenu isOpen={this.state.navOpen} navOpening={this.updateState} />
         <main>
-          <StoryCards path="/" storyData={this.state.filteredStoryCards} />
-          <MonsterCards path="monster-manual" />
+          <Routes storyData={this.state.filteredStoryCards} />
         </main>
-        <Footer
-          path="/"
-          groups={this.state.storyGroups}
-          filterAction={this.updateFilter}
-        />
+        <Footer path="/" groups={this.state.storyGroups} filterAction={this.updateFilter} />
       </>
     );
   }
