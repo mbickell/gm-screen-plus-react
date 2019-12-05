@@ -3,11 +3,8 @@ import { firestore } from "../../firebase";
 // import styles from "./App.module.scss";
 import Header from "../../components/Header/Header";
 import NavMenu from "../../components/NavMenu/NavMenu";
-import StoryCards from "../StoryCards/StoryCards";
 import Footer from "../Footer/Footer";
-import MonsterCards from "../MonsterCards/MonsterCards";
 import Routes from "../Routes/Routes";
-import { Router } from "@reach/router";
 
 class App extends Component {
   state = {
