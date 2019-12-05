@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase";
-// import styles from "./App.module.scss";
+import styles from "./App.module.scss";
 import Header from "../../components/Header/Header";
 import NavMenu from "../../components/NavMenu/NavMenu";
 import Footer from "../Footer/Footer";
@@ -53,7 +53,7 @@ class App extends Component {
       <>
         <Header navOpening={this.updateState} />
         <NavMenu isOpen={this.state.navOpen} navOpening={this.updateState} />
-        <main>
+        <main className={styles.main}>
           <Routes storyData={this.state.filteredStoryCards} />
         </main>
         <Footer path="/" groups={this.state.storyGroups} filterAction={this.updateFilter} />

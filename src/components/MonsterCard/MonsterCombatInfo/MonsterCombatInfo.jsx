@@ -14,7 +14,6 @@ class MonsterCombatInfo extends Component {
 
   getSpeeds = () => {
     const walkSpeed = this.getSpeed(this.props.monsterData.speed.walk, "Walk");
-    console.log(walkSpeed);
     const swimSpeed = this.getSpeed(this.props.monsterData.speed.swim, "Swim");
     const flySpeed = this.getSpeed(this.props.monsterData.speed.fly, "Fly");
     return (
