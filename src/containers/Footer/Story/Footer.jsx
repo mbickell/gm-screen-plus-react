@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./Footer.module.scss";
-import FooterCard from "../../components/FooterCard/FooterCard";
+import FooterCard from "../../../components/FooterCard/FooterCard";
 
 class Footer extends Component {
   state = {};
@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <footer className={styles.storyBeatFooter}>
         {this.props.groups.map(group => (
-          <FooterCard group={group} filterAction={this.props.filterAction} />
+          <FooterCard group={group} key={group} filterAction={this.props.filterAction} />
         ))}
       </footer>
     );

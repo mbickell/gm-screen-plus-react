@@ -3,7 +3,6 @@ import { firestore } from "../../firebase";
 import styles from "./App.module.scss";
 import Header from "../../components/Header/Header";
 import NavMenu from "../../components/NavMenu/NavMenu";
-import Footer from "../Footer/Footer";
 import Routes from "../Routes/Routes";
 
 class App extends Component {
@@ -25,7 +24,6 @@ class App extends Component {
         const storyGroups = storyCards.map(storyCard => {
           return storyCard.group;
         });
-        console.log(storyCards);
         this.setState({
           storyCards,
           filteredStoryCards: storyCards,
@@ -54,9 +52,12 @@ class App extends Component {
         <Header navOpening={this.updateState} />
         <NavMenu isOpen={this.state.navOpen} navOpening={this.updateState} />
         <main className={styles.main}>
-          <Routes storyData={this.state.filteredStoryCards} />
+          <Routes
+            storyData={this.state.filteredStoryCards}
+            groups={this.state.storyGroups}
+            filterAction={this.updateFilter}
+          />
         </main>
-        <Footer path="/" groups={this.state.storyGroups} filterAction={this.updateFilter} />
       </>
     );
   }
