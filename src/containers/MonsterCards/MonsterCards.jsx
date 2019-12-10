@@ -11,8 +11,10 @@ class MonsterCards extends Component {
   };
 
   render() {
-    const filteredCard = this.state.filteredMonsterCards.filter(monsterCard =>
-      monsterCard.name.toLowerCase().includes(this.state.searchText)
+    const filteredCard = this.state.filteredMonsterCards.filter(
+      monsterCard =>
+        monsterCard.name.toLowerCase().includes(this.state.searchText) ||
+        monsterCard.type.toLowerCase().includes(this.state.searchText)
     );
     return (
       <>
