@@ -21,7 +21,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --max-warnings 0"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --max-warnings 0",
+    "deploy": "yarn build && firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
