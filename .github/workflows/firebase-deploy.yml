@@ -37,4 +37,4 @@ jobs:
         with:
           args: deploy
         env:
-          FIREBASE_TOKEN: ${{ 1//03i3Q7ywT9nx0CgYIARAAGAMSNwF-L9IrN2F3kSHNI2nSq6xfLI-s6rb2ThlNoMGQPlxnafjYflXhsZ97iWktnWL9cjSitv-LTwA }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
